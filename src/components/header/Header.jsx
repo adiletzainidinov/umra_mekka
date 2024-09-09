@@ -10,10 +10,13 @@ const Header = () => {
     <>
       <Container>
         <Box sx={{ flexGrow: 1, width: '100%', maxWidth: 1440 }}>
-          <AppBar position="static"  sx={{ backgroundColor: '#2e42f0' }}>
+          <AppBar
+            position="static"
+            sx={{ background: 'linear-gradient(45deg,#6677ff, #2e42f0 )' }}
+          >
             <Toolbar
               variant="regular"
-              sx={{ df: 'flex', justifyContent: 'space-between' }}
+              sx={{ display: 'flex', justifyContent: 'space-between' }}
             >
               <p>LiderUmra-logo</p>
               <IconButton
