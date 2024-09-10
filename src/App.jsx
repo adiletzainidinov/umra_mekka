@@ -1,10 +1,11 @@
-import Header from './components/header/header';
+import Header from './components/header/Header.jsx'
 import Home  from './components/home/Home.jsx';
+
 
 const App = () => {
   return (
     <>
-      <Header />
+    <Header/>
       <Home />
     </>
   );

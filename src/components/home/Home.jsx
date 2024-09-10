@@ -1,4 +1,4 @@
-import { BoxContainer, Container, StyledBox } from './home';
+import { BoxContainer, Container, StyledBox } from './homeStyle';
 import LeftHome from './LeftHome';
 import RightHome from './RightHome';
 

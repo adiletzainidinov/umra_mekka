@@ -1,4 +1,4 @@
-import { FloatingDecor, FloatingDecor2, FloatingDecor3, FloatingDecor4, Img3D, Img3DContainer, Img3DWrapper, RightContainer } from './home';
+import { FloatingDecor, FloatingDecor2, FloatingDecor3, FloatingDecor4, Img3D, Img3DContainer, Img3DWrapper, RightContainer } from './homeStyle';
 import mekkeImg from '../../assets/images/mekke.jpg';
 import mekkeImgGorod from '../../assets/images/1.jpg';
 

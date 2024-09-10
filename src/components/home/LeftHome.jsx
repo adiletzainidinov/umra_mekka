@@ -1,5 +1,5 @@
 import Button from '../../shared/UI/button/Button';
-import { LeftContainer,  StyledButtonInformation } from './home';
+import { LeftContainer,  StyledButtonInformation } from './homeStyle';
 
 const LeftHome = () => {
   return (
