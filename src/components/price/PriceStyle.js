@@ -15,6 +15,8 @@ export const StyledBox = styled('div')(() => ({
   maxWidth: '1440px',
   display: 'flex',
   justifyContent: 'center',
+  position: 'relative',
+  paddingBottom: 300,
 }));
 
 export const BoxContainer = styled('div')(() => ({
@@ -216,4 +218,55 @@ export const FooterTextRightPrice = styled('h5')(() => ({
   marginBottom: 30,
   color: '#9c9c9c',
   fontWeight: 300,
+}));
+
+// blueBox
+
+export const BlueBox = styled('div')(() => ({
+  width: '100%',
+  height: '100%',
+  maxHeight: '800px',
+  position: 'absolute',
+  bottom: 0,
+  left: 0,
+  background: 'linear-gradient(to bottom right, white 30%, #6475fe 30%)',
+  zIndex: -1,
+  '& h2': {
+    marginTop: 500,
+    color: 'white ',
+    textAlign: 'center',
+    fontSize: 35,
+    marginBottom: 50,
+  },
+}));
+
+export const PartnerBox = styled('h5')(() => ({
+  display: 'flex',
+  justifyContent: 'space-between',
+  width: '100%',
+  maxWidth: '1300px',
+  margin: '0 auto',
+  '& .boxCard': {
+    backgroundColor: 'white',
+    boxShadow: '1px 1px 5px 1px rgba(0,0,0,0.15)',
+    borderRadius: 7,
+    padding: '35px 80px',
+    maxWidth: '100%',
+    width: 'fit-content',
+    margin: '0 auto',
+    fontSize: 20,
+    color: '#0f0f30',
+  },
+}));
+
+export const WaveBox = styled('div')(() => ({
+  width: '100%',
+  height: '150px',
+  position: 'absolute',
+  bottom: 0,
+  left: 0,
+  background: 'linear-gradient(to bottom right, #ff5a05, #ed9c73)',
+  zIndex: -1,
+  clipPath:
+    'path("M0,32L48,58.7C96,85,192,139,288,160C384,181,480,171,576,149.3C672,128,768,96,864,74.7C960,53,1056,43,1152,58.7C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z")',
 }));

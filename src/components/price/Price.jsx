@@ -1,12 +1,23 @@
 import LeftPrice from './LeftPrice';
 import {
+  BlueBox,
   BoxContainer,
   Container,
   ContainerContent,
+  PartnerBox,
   StyledBox,
   TextContent,
+  WaveBox,
 } from './PriceStyle';
 import RightPrice from './RightPrice';
+
+const BoxCardData = [
+  { id: 1, text: 'Partner' },
+  { id: 1, text: 'Partner' },
+  { id: 1, text: 'Partner' },
+  { id: 1, text: 'Partner' },
+  { id: 1, text: 'Partner' },
+];
 
 const Price = () => {
   return (
@@ -27,6 +38,18 @@ const Price = () => {
               <RightPrice />
             </ContainerContent>
           </BoxContainer>
+
+          <BlueBox>
+            <h2>НАШИ ПАРТНЕРЫ</h2>
+            <PartnerBox>
+              {BoxCardData.map((item) => (
+                <div className="boxCard" key={item.id}>
+                  {item.text}
+                </div>
+              ))}
+            </PartnerBox>
+          </BlueBox>
+          <WaveBox />
         </StyledBox>
       </Container>
     </>
