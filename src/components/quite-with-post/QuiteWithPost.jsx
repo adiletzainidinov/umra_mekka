@@ -16,24 +16,25 @@ const QuoteContainer = styled(Box)(() => ({
   fontFamily: 'Arial, sans-serif',
 }));
 
-const shareToTelegram = () => {
-  const message = "Сообщается, что Аиша однажды спросила у пророка Мухаммада ﷺ...";
+const shareToTelegram = (message) => {
   const telegramUrl = `https://t.me/share/url?url=&text=${encodeURIComponent(message)}`;
 
-  window.open(telegramUrl, "_blank");
+  window.open(telegramUrl, '_blank');
 };
 
 const QuiteWithPost = () => {
+  const message = `Сообщается, что Аиша однажды спросила у пророка Мухаммада ﷺ: «О посланник Всевышнего, возложен ли на женщин джихад?», 
+        на что он ﷺ (да благословит его Аллах и приветствует) ответил: «Их джихад — совершение Хаджа и Умры».`;
+
   return (
     <QuoteContainer>
       <Typography variant="h6" component="p" gutterBottom>
-        Сообщается, что Аиша однажды спросила у пророка Мухаммада ﷺ: «О посланник Всевышнего, возложен ли на женщин джихад?», 
-        на что он ﷺ (да благословит его Аллах и приветствует) ответил: «Их джихад — совершение Хаджа и Умры».
+        {message}
       </Typography>
       <Typography variant="subtitle1" component="span" color="#7ad5ab">
         (Ибн Маджа)
       </Typography>
-      <Button onClick={shareToTelegram}>
+      <Button onClick={() => shareToTelegram(message)}>
         Поделиться в Telegram
       </Button>
     </QuoteContainer>
