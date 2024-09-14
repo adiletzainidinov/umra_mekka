@@ -16,17 +16,11 @@ const QuoteContainer = styled(Box)(() => ({
   fontFamily: 'Arial, sans-serif',
 }));
 
-const shareToInstagram = () => {
-  const isMobile = /Android|iPhone/i.test(navigator.userAgent);
+const shareToTelegram = () => {
+  const message = "Сообщается, что Аиша однажды спросила у пророка Мухаммада ﷺ...";
+  const telegramUrl = `https://t.me/share/url?url=&text=${encodeURIComponent(message)}`;
 
-  if (isMobile) {
-    const imageUrl = 'https://example.com/image-to-share.jpg'; // URL вашего изображения
-    const instagramUrl = `https://www.instagram.com/stories/share/?file=${encodeURIComponent(imageUrl)}`;
-
-    window.location.href = instagramUrl;
-  } else {
-    alert("Поделиться в Instagram можно только с мобильного устройства.");
-  }
+  window.open(telegramUrl, "_blank");
 };
 
 const QuiteWithPost = () => {
@@ -39,8 +33,8 @@ const QuiteWithPost = () => {
       <Typography variant="subtitle1" component="span" color="#7ad5ab">
         (Ибн Маджа)
       </Typography>
-      <Button onClick={shareToInstagram}>
-        Поделиться в Instagram Stories
+      <Button onClick={shareToTelegram}>
+        Поделиться в Telegram
       </Button>
     </QuoteContainer>
   );
