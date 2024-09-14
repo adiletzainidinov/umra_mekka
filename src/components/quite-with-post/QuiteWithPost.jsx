@@ -17,15 +17,22 @@ const QuoteContainer = styled(Box)(() => ({
 }));
 
 const shareToInstagram = () => {
-  const isMobile = /Android|iPhone/i.test(navigator.userAgent);
+  const imageUrl = 'https://example.com/image-to-share.jpg'; // URL изображения
 
-  if (isMobile) {
-    const imageUrl = 'https://example.com/image-to-share.jpg'; // URL вашего изображения
-    const instagramUrl = `https://www.instagram.com/stories/share/?file=${encodeURIComponent(imageUrl)}`;
+  // Попробуем открыть через URI схему Instagram
+  const instagramUri = `instagram://story-camera?background=${encodeURIComponent(imageUrl)}`;
 
-    window.location.href = instagramUrl;
+  // Проверим, если это мобильное устройство
+  if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+    // Откроем URI схему
+    window.location.href = instagramUri;
+
+    // Если Instagram не установлен, попробуем открыть через веб-версию
+    setTimeout(() => {
+      window.location.href = `https://www.instagram.com/stories/share/?file=${encodeURIComponent(imageUrl)}`;
+    }, 500);
   } else {
-    alert("Поделиться в Instagram можно только с мобильного устройства.");
+    alert('Поделиться в Instagram можно только с мобильного устройства.');
   }
 };
 
