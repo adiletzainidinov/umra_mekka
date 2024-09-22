@@ -11,6 +11,7 @@ export const Container = styled('div')(() => ({
   minHeight: '600px',
   display: 'flex',
   justifyContent: 'center',
+  marginTop: 68
 }));
 
 export const StyledBox = styled('div')(() => ({

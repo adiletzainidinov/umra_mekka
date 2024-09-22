@@ -7,8 +7,11 @@ import Contackts from './components/contackts/Contackts.jsx';
 import Documents from './components/documents/Documents.jsx';
 import Hadis from './components/hadis/Hadis.jsx';
 import Questions from './components/questions/Questions.jsx';
-import QuiteWithPost from './components/quite-with-post/QuiteWithPost.jsx';
+import FooterContacts from './components/footer-contacts/FooterContacts.jsx';
 import Review from './components/review/Review.jsx';
+import QuiteWithPost from './components/quite-with-post/QuiteWithPost.jsx';
+import ReveivWidthVideo from './components/reviev-with-video/ReveivWidthVideo.jsx';
+import Footer from './components/footer/Footer.jsx';
 
 const App = () => {
   return (
@@ -23,7 +26,10 @@ const App = () => {
       <Hadis />
       <Questions />
       <Review />
+      <ReveivWidthVideo/>
       <QuiteWithPost />
+      <FooterContacts/>
+      <Footer/>
     </>
   );
 };
