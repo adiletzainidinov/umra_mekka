@@ -76,7 +76,7 @@ const RightPrice = () => {
       <h2>СТОИМОСТЬ УМРА</h2>
       <p>Без питание, с питанием +100$</p>
       <h3>
-        <span>от </span>900<spa className="dollar">$</spa>
+        <span>от </span>900<span className="dollar">$</span>
       </h3>
       <h4>на одного человека</h4>
       {PriceRightCardData.map((item) => (

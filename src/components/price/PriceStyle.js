@@ -33,6 +33,8 @@ export const TextContent = styled('div')(() => ({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  marginLeft: 20,
+  marginRight: 20,
   '& h2': {
     fontSize: 45,
     marginBottom: 20,
@@ -47,12 +49,43 @@ export const TextContent = styled('div')(() => ({
     maxWidth: 630,
     lineHeight: '24px',
   },
+
+  '@media (max-width: 990px)': {
+    '& h2': {
+      fontSize: 41,
+    },
+  },
+
+  '@media (max-width: 766px)': {
+    '& h2': {
+      fontSize: 37,
+    },
+  },
+
+  '@media (max-width: 480px)': {
+    '& h2': {
+      fontSize: 30,
+    },
+    '& p': {
+      fontSize: 12,
+      lineHeight: '20px',
+      marginBottom: 0,
+    },
+  },
 }));
 
 export const ContainerContent = styled('div')(() => ({
   display: 'flex',
   justifyContent: 'space-between',
   marginBottom: 100,
+  marginLeft: 20,
+  marginRight: 20,
+  '@media (max-width: 990px)': {
+    flexWrap: 'wrap',
+    marginLeft: 30,
+    marginRight: 30,
+    justifyContent: 'center',
+  },
 }));
 
 // LeftBox
@@ -64,6 +97,23 @@ export const ContainerLeftBox = styled('div')(() => ({
     fontWeight: 500,
     width: '100%',
     maxWidth: '420px',
+  },
+  '@media (max-width: 990px)': {
+    marginBottom: 80,
+    '& h2': {
+      fontSize: 32,
+    },
+  },
+  '@media (max-width: 766px)': {
+    '& h2': {
+      fontSize: 29,
+    },
+  },
+  '@media (max-width: 480px)': {
+    marginBottom: 60,
+    '& h2': {
+      fontSize: 26,
+    },
   },
 }));
 
@@ -87,6 +137,11 @@ export const TextIcon = styled('div')(() => ({
       color: '#3b4bd4',
       transform: 'scale(1.2)',
       transition: 'all 0.3s ease',
+    },
+  },
+  '@media (max-width: 990px)': {
+    '& p': {
+      fontSize: 16,
     },
   },
 }));
@@ -161,6 +216,35 @@ export const CardRightPrice = styled(Card)(() => ({
     top: -10,
     marginBottom: 30,
   },
+  '@media (max-width: 550px)': {
+    '& .ribbon': {
+      position: 'absolute',
+      top: '0px',
+      right: '-15px',
+      transform: 'rotate(0deg)',
+      backgroundColor: '#1fe48f',
+      color: '#000',
+      fontWeight: 700,
+      padding: '5px 40px',
+      fontSize: '14px',
+    },
+  },
+  '@media (max-width: 450px)': {
+    '& h2': {
+      fontSize: 24.9,
+    },
+    '& p': {
+      fontSize: 12,
+    },
+    '& h3': {
+      fontSize: 50,
+      '& .dollar': {
+        fontSize: 25,
+        position: 'relative',
+        top: '-20px',
+      },
+    },
+  },
 }));
 
 export const InformationRight = styled('div')(() => ({
@@ -195,6 +279,16 @@ export const InformationRight = styled('div')(() => ({
       transition: 'all 0.3s ease',
     },
   },
+  '@media (max-width: 400px)': {
+    '& p': {
+      maxWidth: 200,
+    },
+  },
+  '@media (max-width: 350px)': {
+    '& p': {
+      maxWidth: 180,
+    },
+  },
 }));
 
 export const LineRightPrice = styled('div')(() => ({
@@ -205,6 +299,26 @@ export const LineRightPrice = styled('div')(() => ({
   position: 'relative',
   top: -7,
   marginLeft: 70,
+  '@media (max-width: 550px)': {
+    width: 350,
+    marginRight: 20,
+  },
+  '@media (max-width: 500px)': {
+    width: 300,
+    marginRight: 20,
+  },
+  '@media (max-width: 450px)': {
+    width: 250,
+    marginRight: 20,
+  },
+  '@media (max-width: 400px)': {
+    width: 200,
+    marginRight: 20,
+  },
+  '@media (max-width: 350px)': {
+    width: 170,
+    marginRight: 20,
+  },
 }));
 
 export const ButtonRightPrice = styled(Button)(() => ({
@@ -245,6 +359,7 @@ export const PartnerBox = styled('h5')(() => ({
   justifyContent: 'space-between',
   width: '100%',
   maxWidth: '1300px',
+  overflow: 'hidden',
   margin: '0 auto',
   '& .boxCard': {
     backgroundColor: 'white',
@@ -253,9 +368,18 @@ export const PartnerBox = styled('h5')(() => ({
     padding: '35px 80px',
     maxWidth: '100%',
     width: 'fit-content',
-    margin: '0 auto',
-    fontSize: 20,
+    margin: '0 10px',
     color: '#0f0f30',
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  '& .keen-slider__slide:first-child': {
+    marginRight: -40,
+  },
+
+  '& .keen-slider__slide:last-child': {
+    marginRight: 120,
+    marginLeft: 0,
   },
 }));
 

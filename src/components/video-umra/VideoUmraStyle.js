@@ -25,7 +25,7 @@ export const Overlay = styled('div')(() => ({
   left: 0,
   right: 0,
   bottom: 0,
-  backgroundColor: 'rgba(0, 0, 0, 0.75)',  
+  backgroundColor: 'rgba(0, 0, 0, 0.75)',
   zIndex: 1,
 }));
 
@@ -60,12 +60,34 @@ export const TextContainer = styled('div')(() => ({
   },
   p: {
     fontSize: '18px',
-    lineHeight: '1.6',  
+    lineHeight: '1.6',
   },
   '& .tirmizi': {
     color: '#ff5a05',
     marginTop: 35,
     fontSize: 16,
-    fontStyle: 'italic',  
+    fontStyle: 'italic',
+  },
+  '@media (max-width: 990px)': {
+    h1: {
+      fontSize: '30px',
+    },
+    p: {
+      fontSize: '16px',
+    },
+    '& .tirmizi': {
+      fontSize: 14,
+    },
+  },
+  '@media (max-width: 480px)': {
+    h1: {
+      fontSize: '26px',
+    },
+    p: {
+      fontSize: '14px',
+    },
+    '& .tirmizi': {
+      fontSize: 12,
+    },
   },
 }));

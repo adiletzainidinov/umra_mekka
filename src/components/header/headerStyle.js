@@ -4,7 +4,17 @@ export const Container = styled('div')(() => ({
   width: '100%',
   display: 'flex',
   justifyContent: 'center',
+  position: 'relative',
+  color: 'white'
 }));
+
+export const StyledBox = styled('div')(() => ({
+  width: '100%',
+  maxWidth: '1440px',
+  display: 'flex',
+  justifyContent: 'space-between',
+}));
+
 
 // menyBurger
 

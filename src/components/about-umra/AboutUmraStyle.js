@@ -23,20 +23,35 @@ export const StyledBox = styled('div')(() => ({
 }));
 
 export const BoxContainer = styled('div')(() => ({
-    width: '100%',
-    maxWidth: '1200px',
-    margin: '0 auto',
-    display: 'flex',
-    flexDirection: 'column',
-  }));
+  width: '100%',
+  maxWidth: '1200px',
+  margin: '0 auto',
+  display: 'flex',
+  flexDirection: 'column',
+  padding: '0 20px',
+  '& h1': {
+    fontSize: 50,
+  },
+  '@media (max-width: 990px)': {
+    '& h1': {
+      fontSize: 45,
+    },
+  },
+  '@media (max-width: 480px)': {
+    '& h1': {
+      fontSize: 40,
+    },
+  },
+}));
 
 export const TextContainer = styled('div')(() => ({
   width: '100%',
   '& p': {
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: 300,
     paddingBottom: 35,
     width: '100%',
+    lineHeight: '28px',
   },
   '& .third': {
     textAlign: 'center',
@@ -46,5 +61,17 @@ export const TextContainer = styled('div')(() => ({
   '& .firstUmra, .fourHadj, .fiveUmra, .sixUmra': {
     fontWeight: 700,
     color: '#0f0f30',
+  },
+  '@media (max-width: 990px)': {
+    '& p': {
+      fontSize: 18,
+      lineHeight: '26px',
+    },
+  },
+  '@media (max-width: 480px)': {
+    '& p': {
+      fontSize: 16,
+      lineHeight: '24px',
+    },
   },
 }));
