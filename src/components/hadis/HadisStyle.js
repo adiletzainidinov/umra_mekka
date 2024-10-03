@@ -63,4 +63,17 @@ export const TextContainer = styled('div')(() => ({
     fontStyle: 'italic',
     marginBottom: 30,
   },
+  '@media (max-width: 766px)': {
+    h1: {
+      fontSize: 28,
+    },
+  },
+  '@media (max-width: 480px)': {
+    h1: {
+      fontSize: 22,
+    },
+    '& .tirmizi': {
+      fontSize: 14,
+    },
+  },
 }));

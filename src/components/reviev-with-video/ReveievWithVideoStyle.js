@@ -22,11 +22,19 @@ export const BoxContainer = styled('div')(() => ({
   margin: '0 auto',
   display: 'flex',
   flexDirection: 'column',
+  padding: '0 20px',
 }));
 
 export const CardContainer = styled('div')(() => ({
   display: 'flex',
   justifyContent: 'space-between',
+  '@media (max-width: 1100px)': {
+    width: '100%',
+    maxWidth: 500,
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    margin: '0 auto',
+  },
 }));
 
 export const TitleRevievVideo = styled('div')(() => ({
@@ -40,16 +48,23 @@ export const TitleRevievVideo = styled('div')(() => ({
       color: '#FF6347',
     },
   },
+  '@media (max-width: 990px)': {
+    h2: {
+      fontSize: 42,
+    },
+  },
+  '@media (max-width: 480px)': {
+    h2: {
+      fontSize: 32,
+    },
+  },
 }));
 
-
-
 export const ButtonStyleVideo = styled(Button)(() => ({
-    width: '100%',
-    maxWidth: '200px',
-    margin: '0 auto',
-    marginTop: 50,
-    padding: '20px',
-    marginBottom: 80
-  }));
-  
+  width: '100%',
+  maxWidth: '200px',
+  margin: '0 auto',
+  marginTop: 50,
+  padding: '20px',
+  marginBottom: 80,
+}));

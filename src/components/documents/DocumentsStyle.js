@@ -12,6 +12,15 @@ export const StyledBox = styled('div')(() => ({
   maxWidth: '1440px',
   display: 'flex',
   flexDirection: 'column',
+  '@media (max-width: 1180px)': {
+    marginTop: -100,
+  },
+  '@media (max-width: 990px)': {
+    marginTop: 0,
+  },
+  '@media (max-width: 480px)': {
+    marginTop: 100,
+  },
 }));
 
 export const BoxContainer = styled('div')(() => ({
@@ -57,6 +66,21 @@ export const CardDocuments = styled('div')(() => ({
     borderRadius: '50%',
     zIndex: 0,
   },
+  '@media (max-width: 1180px)': {
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+  },
+  '@media (max-width: 480px)': {
+    '&::before': {
+      top: '420px',
+      left: '-60px',
+      width: '350px',
+      height: '300px',
+      backgroundColor: 'rgba(0, 123, 255, 0.1)',
+      borderRadius: '50%',
+      zIndex: 0,
+    },
+  },
 }));
 
 // Left Documents
@@ -70,6 +94,17 @@ export const LeftContainer = styled('div')(() => ({
     lineHeight: '42px',
     fontWeight: 700,
     marginBottom: 40,
+    textAlign: 'center',
+  },
+  '@media (max-width: 780px)': {
+    '& h1': {
+      fontSize: 44,
+    },
+  },
+  '@media (max-width: 480px)': {
+    '& h1': {
+      fontSize: 32,
+    },
   },
 }));
 
@@ -77,6 +112,9 @@ export const PapaDocumentSome = styled('div')(() => ({
   display: 'flex',
   justifyContent: 'space-between',
   flexWrap: 'wrap',
+  '@media (max-width: 780px)': {
+    justifyContent: 'center',
+  },
 }));
 
 export const DocumentsSome = styled('div')(() => ({
@@ -113,25 +151,56 @@ export const DocumentsSome = styled('div')(() => ({
     textAlign: 'center',
     lineHeight: '26px',
   },
+  '@media (max-width: 480px)': {
+    '& h2': {
+      fontSize: 26,
+      textAlign: 'center',
+    },
+    '& p': {
+      fontSize: 14,
+    },
+  },
 }));
 
 // Right Container
 
 export const RightContainer = styled('div')(() => ({
-    width: '100%',
-    maxWidth: '400px',
-    margin: '0 auto',
-    display: 'flex',
-    flexDirection: 'column',
+  width: '100%',
+  maxWidth: '400px',
+  margin: '0 auto',
+  display: 'flex',
+  flexDirection: 'column',
+
+  '& img': {
+    width: 350,
+    height: 500,
+    borderRadius: 20,
+    marginLeft: 50,
+    position: 'relative',
+    transform: 'translateY(-150px)',
+    zIndex: 2,
+  },
+  '@media (max-width: 1180px)': {
+    justifyContent: 'center',
+    alignItems: 'center',
+    '& img': {
+      width: 650,
+      transform: 'translateY(0px)',
+      zIndex: 2,
+      marginLeft: 0,
+    },
+  },
+  '@media (max-width: 780px)': {
+    margin: '0 20px',
     '& img': {
       width: 350,
-      height: 500,
-      borderRadius: 20,
-      marginLeft: 50,
-      position: 'relative',
-      transform: 'translateY(-150px)', 
-      zIndex: 2
     },
-  }));
-  
-  
+  },
+  '@media (max-width: 480px)': {
+    margin: '0 20px',
+    '& img': {
+      width: 250,
+      height: 350,
+    },
+  },
+}));

@@ -20,7 +20,7 @@ const Questions = () => {
     <Container>
       <StyledBox>
         <BoxContainer>
-          <h2 style={{textAlign: 'center', fontSize: 44,marginBottom: 30,color: '#0f0f30'}}>Вопросы и ответы</h2>
+          <h2>Вопросы и ответы</h2>
           {QuestionsData.map((item) => (
             <div key={item.id}>
               <QuestionsBox onClick={() => handleIsVisible(item.id)}>

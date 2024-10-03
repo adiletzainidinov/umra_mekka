@@ -15,7 +15,6 @@ export const StyledBox = styled('div')(() => ({
   position: 'relative',
   paddingBottom: 100,
   backgroundColor: '#fdeee7',
-
 }));
 
 export const BoxContainer = styled('div')(() => ({
@@ -26,6 +25,22 @@ export const BoxContainer = styled('div')(() => ({
   flexDirection: 'column',
   padding: '0 20px',
   marginTop: 100,
+  '& h2': {
+    textAlign: 'center',
+    fontSize: 44,
+    marginBottom: 30,
+    color: '#0f0f30',
+  },
+  '@media (max-width: 766px)': {
+    '& h2': {
+      fontSize: '38px',
+    },
+  },
+  '@media (max-width: 480px)': {
+    '& h2': {
+      fontSize: '28px',
+    },
+  },
 }));
 
 export const QuestionsBox = styled('div')(() => ({
@@ -53,10 +68,20 @@ export const QuestionsBox = styled('div')(() => ({
     fontWeight: 600,
     color: '#30314e',
   },
+  '@media (max-width: 766px)': {
+    '& p': {
+      fontSize: '16px',
+    },
+  },
+  '@media (max-width: 480px)': {
+    '& p': {
+      fontSize: '14px',
+    },
+  },
 }));
 
 export const QuestionContent = styled('div')(({ isVisible }) => ({
-  maxHeight: isVisible ? '500px' : '0px',
+  maxHeight: isVisible ? '2500px' : '0px',
   opacity: isVisible ? 1 : 0,
   transition: 'max-height 0.5s ease, opacity 0.5s ease',
   overflow: 'hidden',

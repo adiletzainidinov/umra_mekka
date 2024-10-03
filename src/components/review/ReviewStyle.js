@@ -33,8 +33,17 @@ export const ReviewsFromЗilgrims = styled('h2')(() => ({
   textTransform: 'uppercase',
   letterSpacing: '1px',
   transition: 'color 0.3s ease',
+  marginLeft: 20,
+  marginRight: 20,
   '&:hover': {
     color: '#FF6347',
+  },
+  '@media (max-width: 766px)': {
+    fontSize: '36px',
+  },
+  '@media (max-width: 480px)': {
+    fontSize: '28px',
+    marginBottom: '40px',
   },
 }));
 
@@ -43,6 +52,10 @@ export const ReviewPapa = styled('div')(() => ({
   justifyContent: 'space-between',
   gap: 50,
   flexWrap: 'wrap',
+  margin: '0 20px',
+  '@media (max-width: 1100px)': {
+    justifyContent: 'center',
+  },
 }));
 
 export const RevievCard = styled('div')(({ BackgroundColor }) => ({
@@ -88,6 +101,14 @@ export const AboutNameReviev = styled('div')(() => ({
     fontWeight: 'bold',
     color: '#FF6347',
   },
+  '@media (max-width: 550px)': {
+    '& p': {
+      fontSize: '16px',
+    },
+    '& .raiting': {
+      fontSize: '14px',
+    },
+  },
 }));
 
 export const RealReviev = styled('div')(() => ({
@@ -102,6 +123,11 @@ export const RealReviev = styled('div')(() => ({
   },
   '&:hover p': {
     color: '#555',
+  },
+  '@media (max-width: 550px)': {
+    '& p': {
+      fontSize: '14px',
+    },
   },
 }));
 
@@ -134,6 +160,11 @@ export const DateAndRead = styled('div')(() => ({
     transform: 'scale(1.1)',
     boxShadow: '0 6px 12px rgba(0, 0, 0, 0.15)',
   },
+  '@media (max-width: 550px)': {
+    '& h2': {
+      fontSize: '12px',
+    },
+  },
 }));
 
 // Button
@@ -144,5 +175,5 @@ export const ButtonStyle = styled(Button)(() => ({
   margin: '0 auto',
   marginTop: 50,
   padding: '20px',
-  marginBottom: 80
+  marginBottom: 80,
 }));

@@ -23,9 +23,9 @@ const RightContackt = () => {
           ))}
         </SossialMediaBox>
         <SossialMediaButton>
-          Будьте в курсе новых умра туров
+          <p>Будьте в курсе новых умра туров</p>{' '}
           <img
-            style={{ width: 25, height: 25,marginLeft: 10 }}
+            style={{ width: 25, height: 25, marginLeft: 10 }}
             src={telegramIcon}
             alt="telegramIcon"
           />

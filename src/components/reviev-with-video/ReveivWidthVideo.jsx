@@ -40,7 +40,7 @@ const ReveivWidthVideo = () => {
           </TitleRevievVideo>
           <CardContainer>
             {RevievWithVideoData.map((item) => (
-              <Card key={item.id} sx={{ maxWidth: 345 }}>
+              <Card key={item.id} sx={{ maxWidth: 345,marginBottom: 4 }}>
                 <CardActionArea>
                   <CardMedia
                     component="iframe"

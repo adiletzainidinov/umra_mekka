@@ -381,6 +381,7 @@ export const PartnerBox = styled('h5')(() => ({
     marginRight: 120,
     marginLeft: 0,
   },
+
 }));
 
 export const WaveBox = styled('div')(() => ({

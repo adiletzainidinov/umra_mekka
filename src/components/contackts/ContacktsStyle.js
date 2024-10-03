@@ -13,6 +13,9 @@ export const StyledBox = styled('div')(() => ({
   maxWidth: '1440px',
   display: 'flex',
   justifyContent: 'space-between',
+  '@media (max-width: 990px)': {
+    flexWrap: 'wrap',
+  },
 }));
 
 // Contack Left
@@ -32,6 +35,8 @@ export const ContacktsLeftBox = styled('div')(() => ({
   alignItems: 'center',
   color: '#fff',
   textAlign: 'center',
+  paddingRight: 20,
+  paddingLeft: 20,
   '&::before': {
     content: '""',
     position: 'absolute',
@@ -69,6 +74,25 @@ export const ContacktsLeftBox = styled('div')(() => ({
       transform: 'translateY(0)',
     },
   },
+  '@media (max-width: 990px)': {
+    width: '100%',
+    maxWidth: 990,
+    '& h2': {
+      fontSize: '2.3rem',
+    },
+  },
+  '@media (max-width: 766px)': {
+    '& h2': {
+      fontSize: '2.1rem',
+    },
+  },
+  '@media (max-width: 480px)': {
+    height: '100%',
+    maxHeight: 400,
+    '& h2': {
+      fontSize: '1.9rem',
+    },
+  },
 }));
 
 // Contackt Right
@@ -80,6 +104,11 @@ export const ContacktsRightBox = styled('div')(() => ({
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
+  '@media (max-width: 990px)': {
+    height: '100%',
+    maxHeight: 350,
+    padding: '0 20px',
+  },
 }));
 
 export const SossialMediaBox = styled('div')(() => ({
@@ -97,11 +126,21 @@ export const SossialMediaBox = styled('div')(() => ({
       color: 'white',
     },
   },
+  '@media (max-width: 400px)': {
+    '& p': {
+      padding: 15
+    },
+  },
 }));
 
 export const SossialMediaButton = styled(Button)(() => ({
   width: '100%',
   maxWidth: 440,
   marginTop: 30,
-  fontSize: 17
+  fontSize: 17,
+  '@media (max-width: 480px)': {
+    '& p': {
+      fontSize: 14
+    }
+  },
 }));
