@@ -207,6 +207,9 @@ export const FloatingDecor = styled('div')(() => ({
     '50%': { transform: 'translateY(-25px)' },
     '100%': { transform: 'translateY(0)' },
   },
+  '@media (max-width: 1060px)': {
+    // left: '60%',
+  },
   '@media (max-width: 550px)': {
     width: 100,
     height: 100,
@@ -237,7 +240,7 @@ export const FloatingDecor2 = styled(FloatingDecor)(() => ({
 
 export const FloatingDecor3 = styled(FloatingDecor)(() => ({
   top: '10%',
-  left: '75%',
+  left: '55%',
   width: '100px',
   height: '100px',
   background:

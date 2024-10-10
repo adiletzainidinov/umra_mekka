@@ -35,4 +35,16 @@ export const QuoteContainer = styled(Box)(() => ({
     marginTop: 50,
     width: '100%',
   },
+  '@media (max-width: 990px)': {
+    '& .text': {
+      fontSize: 24,
+      lineHeight: '44px',
+    },
+  },
+  '@media (max-width: 480px)': {
+    '& .text': {
+      fontSize: 18,
+      lineHeight: '34px',
+    },
+  },
 }));

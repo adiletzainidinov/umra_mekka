@@ -13,6 +13,7 @@ export const StyledBox = styled('div')(() => ({
   maxWidth: '1440px',
   display: 'flex',
   flexDirection: 'column',
+  padding: '0 20px',
 }));
 
 export const BoxContainer = styled('div')(() => ({
@@ -28,6 +29,16 @@ export const BoxContainer = styled('div')(() => ({
     marginBottom: 40,
     color: '#0f0f30',
   },
+  '@media (max-width: 990px)': {
+    '& h2': {
+      fontSize: 36,
+    },
+  },
+  '@media (max-width: 350px)': {
+    '& h2': {
+      fontSize: 28,
+    },
+  },
 }));
 
 // Content
@@ -35,6 +46,11 @@ export const BoxContainer = styled('div')(() => ({
 export const PapaLeftRightFooter = styled('div')(() => ({
   display: 'flex',
   justifyContent: 'space-between',
+  '@media (max-width: 1200px)': {
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: 20,
+  },
 }));
 
 export const LeftContactsFooter = styled('div')(() => ({}));
@@ -47,6 +63,14 @@ export const FooterFlex = styled('div')(() => ({
   gap: 40,
   '& .call': {
     marginRight: 10,
+  },
+  '@media (max-width: 610px)': {
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: 20,
+    '& .call-out': {
+      marginRight: 40,
+    },
   },
 }));
 
@@ -72,6 +96,15 @@ export const ButtonStyle = styled(Button)(() => ({
   },
   '& .telegram': {
     width: 20,
-    height: 20
-  }
+    height: 20,
+  },
+  '@media (max-width: 400px)': {
+    fontSize: 14,
+  },
+  '@media (max-width: 350px)': {
+    fontSize: 12,
+  },
+  '@media (max-width: 320px)': {
+    fontSize: 10,
+  },
 }));

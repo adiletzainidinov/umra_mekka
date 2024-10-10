@@ -34,7 +34,7 @@ const FooterContacts = () => {
             {FooterContactsData.map((item) => (
               <LeftContactsFooter key={item.id}>
                 <FooterFlex>
-                  <p>
+                  <p className='call-out'>
                     <span className="call">
                       <ion-icon name="call-outline"></ion-icon>
                     </span>
