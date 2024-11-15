@@ -34,7 +34,7 @@ const Header = () => {
                 component="div"
                 sx={{ fontWeight: 'bold', color: '#ffffff' }}
               >
-                Адыл каары
+                ваш логотип
               </Typography>
             </Box>
             <SideBar />
