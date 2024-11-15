@@ -166,7 +166,6 @@ export const CardRightPrice = styled(Card)(() => ({
   position: 'relative',
   color: '#fff',
   textAlign: 'center',
-
   '& h2': {
     fontSize: '30px',
     fontWeight: 700,
@@ -227,6 +226,7 @@ export const CardRightPrice = styled(Card)(() => ({
       fontWeight: 700,
       padding: '5px 40px',
       fontSize: '14px',
+      borderBottomLeftRadius: 100
     },
   },
   '@media (max-width: 450px)': {
@@ -381,7 +381,6 @@ export const PartnerBox = styled('h5')(() => ({
     marginRight: 120,
     marginLeft: 0,
   },
-
 }));
 
 export const WaveBox = styled('div')(() => ({
